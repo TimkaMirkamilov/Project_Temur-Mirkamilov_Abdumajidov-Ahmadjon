@@ -1,0 +1,32 @@
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7AA2FF"/>
+      <stop offset="100%" stop-color="#4F7DFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Code icon -->
+  <g stroke="url(#blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="22,14 12,24 22,34"/>
+    <line x1="30" y1="12" x2="24" y2="36"/>
+    <polyline points="34,14 44,24 34,34"/>
+  </g>
+
+  <!-- Text -->
+  <text x="58" y="29"
+        font-family="Poppins, Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="700"
+        fill="#FFFFFF">
+    HTML
+  </text>
+
+  <text x="108" y="29"
+        font-family="Poppins, Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="700"
+        fill="url(#blue)">
+    Review
+  </text>
+</svg>

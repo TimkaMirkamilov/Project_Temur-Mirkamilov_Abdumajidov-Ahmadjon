@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101d"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+
+    <!-- Browser Window Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Font for handwriting style text -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&amp;display=swap');
+      .handwriting {
+        font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+        font-size: 26px;
+        fill: #93a5c4;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="800" height="450" fill="url(#bgGlow)"/>
+
+  <!-- Main Composition Group -->
+  <g transform="translate(40, 20)">
+    
+    <!-- Dark Blob / Shadow Shape Behind Window -->
+    <path d="M 110,230 
+             C 110,180 180,180 220,180 
+             C 280,180 320,220 370,220 
+             C 450,220 500,160 550,170 
+             C 600,180 630,220 620,260 
+             C 610,300 550,330 480,340 
+             C 410,350 250,430 180,410 
+             C 120,390 110,300 110,230 Z" 
+          fill="#111827" opacity="0.95"/>
+
+    <!-- Tilted Window Group -->
+    <g transform="rotate(-4, 380, 220)" filter="url(#shadow)">
+      
+      <!-- Outer Window Frame (Border) -->
+      <rect x="180" y="80" width="370" height="260" rx="14" ry="14" 
+            fill="#121b2d" stroke="#253a5e" stroke-width="2.5"/>
+
+      <!-- Header Separator Line -->
+      <line x1="180" y1="125" x2="550" y2="125" stroke="#1d2c47" stroke-width="2"/>
+
+      <!-- Header Window Control Dots -->
+      <circle cx="206" cy="103" r="5" fill="#3b5888"/>
+      <circle cx="224" cy="103" r="5" fill="#3b5888"/>
+      <circle cx="242" cy="103" r="5" fill="#587db3"/>
+
+      <!-- Code Symbol: Angle Brackets & Slash </ > -->
+      <g stroke="#3b82f6" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Left Angle Bracket < -->
+        <path d="M 285,178 L 260,195 L 285,212"/>
+        
+        <!-- Forward Slash / -->
+        <line x1="312" y1="165" x2="293" y2="225"/>
+        
+        <!-- Right Angle Bracket > -->
+        <path d="M 320,178 L 345,195 L 320,212"/>
+      </g>
+
+      <!-- Code Line Placeholders -->
+      <!-- Top Line -->
+      <rect x="255" y="248" width="220" height="12" rx="6" fill="#1e3456"/>
+      <!-- Bottom Line -->
+      <rect x="255" y="273" width="145" height="12" rx="6" fill="#172843"/>
+
+    </g> <!-- End Tilted Window -->
+
+    <!-- Arrow pointing to the window -->
+    <path d="M 580,180 Q 555,185 540,210" 
+          fill="none" stroke="#8fa0bc" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arrowhead -->
+    <path d="M 540,210 L 549,203 M 540,210 L 543,218" 
+          stroke="#8fa0bc" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hand-written Style Text -->
+    <text x="590" y="150" class="handwriting">
+      <tspan x="590" dy="0">Build your</tspan>
+      <tspan x="590" dy="30">HTML skills</tspan>
+    </text>
+
+  </g>
+</svg>
